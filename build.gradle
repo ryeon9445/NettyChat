@@ -1,0 +1,18 @@
+group 'com.cbr.os.nettychat'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.23.Final'
+    compile group: 'org.json', name: 'json', version: '20180130'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.11'
+    compile group: 'org.eclipse.jetty.websocket', name: 'websocket-client', version: '9.4.3.v20170317'
+}
